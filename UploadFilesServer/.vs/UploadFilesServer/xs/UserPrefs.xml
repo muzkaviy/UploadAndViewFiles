@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{B6052824-A932-45C8-A9C6-42C2DD82FF90}|Default">
+  <MonoDevelop.Ide.ItemProperties.UploadFilesServer.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UploadFilesServer" expanded="True">
+            <Node name="UploadFilesServer" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="UploadController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="UploadedFiles" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="UploadFilesServer.Tests" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UploadFilesServer PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,38 @@
+<article class="container container-fluid">
+  <section class="create">
+    <h3 style="text-align:center;">File Upload and View</h3>
+    <form>
+      <app-upload (onUploadFinished)="uploadFinished($event)"></app-upload>
+      <p>{{this.response?.dbPath}}</p>
+      <p style="color: red;">{{this.errorMessage}}</p>
+
+      <div class="row">
+        <div class="offset-md-5 col-md-2">
+          <button type="button" class="btn btn-primary" (click)="onCreate()">Add File</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section *ngFor="let fileType of fileTypes">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">{{fileType}} Files</th>
+          <th scope="col">Size</th>
+          <th scope="col">Upload Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let file of files">        
+          <tr *ngIf="file.fileType == fileType">
+            <td><a [href]="createFilePath(file.filePath)" >{{file.filePath}}</a></td>
+            <td>{{file.fileSize}} bytes</td>
+            <td>{{file.uploadDate}}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </section>
+</article>
+

@@ -1,0 +1,68 @@
+Test task:
+
+Using .NET Core Web API and Angular (latest) create a simple page to upload/view files. The page is split into two parts: upload area and view area.
+
+Upload area - single for all files. File size and file types that can be uploaded to the server must be configurable. Validation for invalid data should present.
+View area consists of tables  - one table per permitted file type. Each table must reflect: file name, file size, upload date. Keep in mind that the number of files can be unlimited.
+Add at least two unit tests for the back-end and two unit tests for the front-end. Tests must have positive and negative scenarios. Default tests added by angular cli will be ignored during the task evaluation.
+API and UI must have layered architecture, code must follow common style guides and development principles
+The page should be as generic/reusable as possible
+Feel free to choose any storage for uploaded files (it can be DB/File System/etc.) The only requirement here - storage must be persistent during runtime
+File download/preview is not required but would be good if implemented.
+ * project should not contain code that is not related to the task
+** all external references must be excluded from the package with the test task project (please do NOT include Node Modules).
+
+FAQs
+
+1.Page should be as generic/reusable as possible - what does it mean exactly?
+Make sure everything is componetised and coded in a proper and correct way. Not sure all coded on one screen
+
+2.What types of downloadable files must the application support?
+It can support any files, you can make up which files it supports. It only needs to show the metadata of the files not view them
+
+3.User that uploaded file-Does it mean that the application should also support the simplest security (user registration/login)?
+No need to do user login, the page does not need security
+
+4.Are there any restrictions as for .Net version to be used? Should it necessarily be .Net Core? Could I use "standard" MVC solution for security?
+Standard MVC is fine, no need to use .net Core
+
+5.Do I understand right that application does not have to expose file content, but only file metadata listed above?
+Correct, only needs to show meta data, no need to show file content
+
+
+
+
+
+
+Test görevi:
+
+.NET Core Web API ve Angular'ı (en son) kullanarak dosyaları yüklemek / görüntülemek için basit bir sayfa oluşturun. Sayfa iki bölüme ayrılmıştır: yükleme alanı ve görüntüleme alanı.
+
+Yükleme alanı - tüm dosyalar için tek. Sunucuya yüklenebilecek dosya boyutu ve dosya türleri yapılandırılabilir olmalıdır. Geçersiz veriler için doğrulama mevcut olmalıdır.
+Görünüm alanı tablolardan oluşur - izin verilen dosya türü başına bir tablo. Her tablo şunları yansıtmalıdır: dosya adı, dosya boyutu, yükleme tarihi. Dosya sayısının sınırsız olabileceğini unutmayın.
+Arka uç için en az iki birim testi ve ön uç için iki birim testi ekleyin. Testlerin olumlu ve olumsuz senaryoları olmalıdır. Açısal cli tarafından eklenen varsayılan testler, görev değerlendirmesi sırasında göz ardı edilecektir.
+API ve UI katmanlı mimariye sahip olmalı, kod ortak stil kılavuzlarını ve geliştirme ilkelerini takip etmelidir
+Sayfa olabildiğince genel / yeniden kullanılabilir olmalıdır
+Yüklenen dosyalar için herhangi bir depolama alanı seçmekten çekinmeyin (DB / Dosya Sistemi / vb. Olabilir) Buradaki tek gereksinim - depolama, çalışma süresi boyunca kalıcı olmalıdır
+Dosya indirme / önizleme gerekli değildir, ancak uygulanırsa iyi olur.
+ * proje, görevle ilgili olmayan kod içermemelidir
+** tüm harici referanslar, test görevi projesiyle birlikte paketin dışında bırakılmalıdır (lütfen Düğüm Modüllerini DAHİL ETMEYİN).
+
+Sıkça Sorulan Sorular
+
+1. Sayfa olabildiğince genel / yeniden kullanılabilir olmalıdır - bu tam olarak ne anlama geliyor?
+Her şeyin bileşenlere ayrıldığından ve doğru ve doğru bir şekilde kodlandığından emin olun. Tümünün tek ekranda kodlandığından emin değilim
+
+2. Uygulama hangi tür indirilebilir dosyaları desteklemelidir?
+Herhangi bir dosyayı destekleyebilir, hangi dosyaları desteklediğini oluşturabilirsiniz. Yalnızca dosyaların meta verilerini göstermesi gerekir, bunları görüntülemiyor
+
+3. Dosyayı yükleyen kullanıcı - Bu, uygulamanın aynı zamanda en basit güvenliği (kullanıcı kaydı / oturum açma) desteklemesi gerektiği anlamına mı geliyor?
+Kullanıcı girişi yapmanıza gerek yok, sayfanın güvenliğe ihtiyacı yok
+
+4. .Net sürümünün kullanılmasıyla ilgili herhangi bir kısıtlama var mı? Net Core olması gerekir mi? Güvenlik için "standart" MVC çözümünü kullanabilir miyim?
+Standart MVC iyi, .net Core kullanmaya gerek yok
+
+5. Uygulamanın dosya içeriğini değil, yalnızca yukarıda listelenen dosya meta verilerini ifşa etmesi gerektiğini doğru anlıyor muyum?
+Doğru, sadece meta verileri göstermesi gerekiyor, dosya içeriğini göstermeye gerek yok
+
+
